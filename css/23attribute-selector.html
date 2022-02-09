@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [title] {
+            text-decoration: underline;
+        }
+        h1[title]{
+            color: aquamarine;
+        }
+        [title="seoul"]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*2>lorem3^h1[title]>lorem3 -->
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1>Iste, eius porro.</h1>
+    <h1 title="title">Lorem, ipsum dolor.</h1>
+
+    <!-- p[title]>lorem -->
+    <p title="seoul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit! Quae aliquid necessitatibus nesciunt eligendi consequatur fugiat nobis dolorem delectus, culpa, molestias error, reiciendis quaerat distinctio ducimus harum expedita totam.</p>
+
+    <!-- h2[title="seoul"]>lorem3 -->
+    <h2 title="seoul">Lorem, ipsum dolor.</h2>
+</body>
+</html>
