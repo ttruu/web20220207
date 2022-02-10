@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #head1{
+            width: 200px;
+            height: 100px;
+            /* 콘텐트는 width와 height로 구성되어 있다 */
+            border: 1px solid black;
+            background-color: burlywood;
+        }
+        #head2{
+            width: 100%;
+            /* %로 주면 부모 영역의 %를 차지하라는 말 */
+            /* 100%를 주면body 부분의 크기와 동일 */
+            height: 50px;
+            border: 5px double black;
+            background-color: chartreuse;
+        }
+        #head3{
+            width: 50%;
+            height: 70px;
+            border: 10px dashed black;
+            background-color: bisque;
+        }
+        #head4{
+            border: 10px dotted black;
+            background-color: blue;
+            /* 구글에 검사에서 user agent stylesheet를 보면 마진이랑 콘텐트 값이 들어가 있는 것을 알 수 있다 */
+            /* 콘텐트는 가능한한 부모의 영역을 다 차지하려고 함 */
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*5#head$>lorem3 -->
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Voluptatum, nobis facere.</h1>
+    <h1 id="head3">Similique, recusandae porro!</h1>
+    <h1 id="head4">Vel, ex omnis?</h1>
+    <h1 id="head5">Iure, ut cumque?</h1>
+</body>
+</html>
