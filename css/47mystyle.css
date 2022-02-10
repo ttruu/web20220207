@@ -1,0 +1,7 @@
+button {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    /* border: 3px solid; */
+    /* internal style */
+}

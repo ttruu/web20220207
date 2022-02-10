@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .item{
+            text-align: center;
+            font-size: 2em;
+        }
+        .item:nth-child(odd) {
+            background-color: hotpink;
+            color: yellow;
+        }
+        .item:nth-child(even) {
+            background-color: indigo;
+            color: whitesmoke;
+        }
+        .box{
+            display: flex;
+            /* flex 박스 안에 잇는 애들은 기본적으로 가장 높은 높이를 가지고 !오른쪽!에 배치됨 */
+
+            height: 300px;
+        }
+        .menu-container {
+            display: flex;
+            background-color: blueviolet;
+        }
+        .menu-item {
+            font-size: 20px;
+            font-weight: bold;
+            color: aliceblue;
+            padding: 7px 5px;
+            border: 2px solid blueviolet;
+            box-sizing: border-box;
+        }
+        .menu-item:hover{
+            background-color: yellow;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+    
+        <!-- #ex$.item*5{$} -->
+    <div id="ex1" class="item">1</div>
+    <div id="ex2" class="item">2</div>
+    <div id="ex3" class="item">3</div>
+    <div id="ex4" class="item">4</div>
+    <div id="ex5" class="item">5</div>
+    
+    </div>
+    
+    <hr>
+
+    <!-- .menu-container>.menu-item*5>lorem1 -->
+    <div class="menu-container"> <!-- flexcontainer 부모 justify-content를 쓸 수 있음-->
+        <div class="menu-item">Lorem.</div> <!--flex item 자식-->
+        <div class="menu-item">Earum?</div>
+        <div class="menu-item">Numquam?</div>
+        <div class="menu-item">Mollitia.</div>
+        <div class="menu-item">Similique.</div>
+    </div>
+</body>
+</html>
