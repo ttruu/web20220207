@@ -11,31 +11,60 @@
 <body>
     <script>
         // 여러 개 함수 정의하고 호출하기
+        // function 안에 x, y로만 사용 가능 
+        // 서로 다른 함수 안에서 같은 파라미터명을 써도 충돌하지 않는다 
         let add = function(a, b) {
             console.log(a+b);
         }
-        add(3, 5);
-        add(10,20);
+        add(3, 5); //8
+        add(10,20); //30
 
         let multifly = function(c, d) {
             console.log(c*d);
         }
-        multifly(3, 5);
-        multifly(10, 20);
+        multifly(3, 5); //15
+        multifly(10, 20); //200
 
         let divide = function(e, f) {
             console.log(e/f);
         }
-        divide(10, 2);
-        divide(33, 3);
+        divide(10, 2); // 5
+        divide(33, 3); // 11
 
         let minus = function(g, h) {
             console.log(g-h);
         }
-        minus(9, 2);
-        minus(30, 11);
+        minus(9, 2); //7
+        minus(30, 11); //19
 
     </script>
+        <script>
+            // 연습
+           /* let add = function(x, y) {
+                console.log(x+y);
+            }
+            add(3,5);
+            add(10,20);
+    
+            let multifly= function(x, y) {
+                console.log(x*y);
+            }
+            multifly(3,5);
+            multifly(10,20);
+    
+            let divide = function(x, y) {
+                console.log(x/y);
+            }
+            divide(10,2);
+            divide(33,3);
+    
+            let minus = function(x, y) {
+                console.log(x-y);
+            }
+            minus(9,2);
+            minus(30,11);
+            */
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
