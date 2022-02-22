@@ -20,20 +20,18 @@
         
         $(document).ready(function () {
             $("#input1").keyup(function () {
-                $("#ul1 > li").slideUp("fast");
+                $("#ul1 > li").slideUp("slow");
 
                 let text = this.value.toLowerCase();
                 for (let item of $("#ul1 > li")) {
 
                     // text() : jquery method, 요소의 text content 리턴
                     // includes() : string method, 파라미터로 받은 string을 포함하고 있으면 true, 그렇지 않으면 false
-                    if ($(item).text().toLowerCase().includes(text)) {
                         if ($(item).text().toLowerCase().includes(text)) {
                             $(item).slideDown("fast");
                         } else {
                             $(item).slideUp("fast");
                         }
-                    }
                 }
             });
         });
